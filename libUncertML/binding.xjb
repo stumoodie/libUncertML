@@ -1,0 +1,22 @@
+<jxb:bindings version="1.0"
+               xmlns:jxb="http://java.sun.com/xml/ns/jaxb"
+			   xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+               xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <jxb:bindings schemaLocation="./src/UncertML30.xsd" node="/xs:schema">
+	<jxb:globalBindings choiceContentProperty="false">
+		<!-- This instruction changes the code generation to try and use classes for elements as
+			 much as possible and minimise the use of JAXBElement etc. It also pluralises method
+			 names that return lists. --> 
+		<!--xjc:simple/ -->
+	</jxb:globalBindings> 
+     <jxb:schemaBindings>
+      <jxb:package name="org.uncertml.libuncertml.dom">
+        <jxb:javadoc><![CDATA[<body>Package level documentation for generated package primer.myPo.</body>]]>
+		</jxb:javadoc>
+      </jxb:package>
+	</jxb:schemaBindings>
+	<jxb:bindings node="//xs:complexType[@name='probability']">
+	 <jxb:class name="ProbabilityValue"/>
+    </jxb:bindings>
+  </jxb:bindings>
+</jxb:bindings>

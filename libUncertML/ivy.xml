@@ -20,8 +20,8 @@
 <ivy-module version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
     <info
-        organisation="uk.ac.ebi"
-        module="libpharmml"
+        organisation="org.uncertml"
+        module="libuncertml"
         status="integration">
 	</info>
 	<configurations>
